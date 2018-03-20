@@ -1,0 +1,274 @@
+// Framework
+@import 'bulma';
+
+// Styling
+@import "uikit.min";
+@import "mediaplayer.min";
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+
+
+// Container
+
+.uk-container{
+  max-width: 100%;
+}
+
+.uk-grid {
+  margin-left: 0px;
+}
+
+// Nav
+
+nav{
+  height: 50px;
+  background: #000;
+  margin: 100px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.is-one-third{
+  font-size: .9rem;
+  margin-top: 25px;
+}
+
+.a-nav{
+  color: #F9F9F9;
+}
+
+.a-nav:hover{
+  color: #888;
+}
+
+h2{
+  color: #FFF;  
+}
+
+
+// Headline
+h1{
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #FFF;
+  text-align:center; 
+  margin-top: 40px; 
+  padding-bottom: 9px;
+}
+
+h3{
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+// Body
+
+body{
+  // background: linear-gradient(#000, #000, #0E2B3D, #fff);
+  // background-size: cover;
+  background: #000;
+}
+
+// Body Font
+// Score: 0, 0, 0, 2
+body, h1,
+article, a, footer{
+  font-family: 'Raleway', sans-serif;
+}
+
+.reviews{
+  text-align: center;
+  margin-bottom: -20px; 
+}
+
+
+p{
+  font-size: 16px;
+  line-height: 1.6;
+  color: #F9F9F9;
+  margin: 100px 150px 0px 150px;
+  text-align: justify;
+}
+
+li{
+  list-style-type:none;
+}
+
+a, a:hover{
+  color:#888;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.imggrid{
+  margin: 100px;
+  margin-top: 100px;
+}
+
+img{
+  width: 90%;
+  align-self: center;
+}
+
+.hugh{
+  height: 210px;
+  width: auto;
+  margin-left: 100px;
+}
+
+// #hugh_text{
+//   // top: 20%;
+//   // left: 60%;
+// }
+
+.christian{
+  height: 210px;
+  width: auto;
+}
+
+.michael{
+  height: 210px;
+  width: auto;
+  margin-left: 20px;
+}
+
+.scarlett{
+  height: 210px;
+  width: auto;
+  margin-left: -60px;
+
+}
+
+.p_footer{
+  color: #FFF;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+// With Simple Caption https://codepen.io/kw7oe/pen/mPeepv?editors=1100 kw7oe
+
+.column{
+  padding: 0px;
+  padding-bottom: 70px;
+}
+
+.column#caption {
+	position: relative;
+}
+
+.column#caption .text {
+		position: absolute;		
+    top: 85%;
+		left: 55%;
+    text-align: center;
+		transform: translate(-50%, -50%);
+		z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;			
+}
+.column#caption .text h1 {		
+		margin: 0;		
+		color: white;
+}
+.column#caption:hover .text {
+	opacity: 1;
+	
+}
+.column#caption:hover img {
+	-webkit-filter: sepia(90%);
+}
+
+
+
+
+// Video 
+
+.mejs__controls{
+  margin:5px;
+  left: -5px;
+}
+
+.mejs__time-total{
+  margin: -5px 0px;
+  height: 25px;
+  background: #0E2B3D;
+}
+
+.mejs__time-loaded{
+  height:25px;
+  background: #3B5C78;
+}
+
+.mejs__time-current{
+  height:25px;
+  background: #5B8DB7;
+}
+
+.mejs__duration, .mejs__currenttime{
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: gray;
+  line-height: 0px;
+}
+
+
+@media (min-width: 1200px) {
+  .uk-grid {
+    margin-left: 0px;
+  }  
+  
+}
+
+// Mobile
+
+@media (max-width: 550px) {
+  
+  .mejs__controls{
+    height: 11%; 
+  }
+  
+  .mejs__time-total{
+  margin: -5px 0px;
+  height: 25px;
+}
+
+.mejs__time-loaded{
+  height:25px;
+}
+
+.mejs__time-current{
+  height:25px;
+}
+  
+}
+
+@media (max-width: 430px) {
+  
+  .mejs__controls{
+    height: 14%; 
+  }
+  
+  .mejs__time-total{
+  margin: -5px 0px;
+  height: 25px;
+}
+
+.mejs__time-loaded{
+  height:25px;
+}
+
+.mejs__time-current{
+  height:25px;
+}
+  
+}
+
+// Inline, Pounds, Dots, Elements
+// Score: 0, 0, 0, 1
+
+//   -webkit-box-reflect: below -56px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(#eee, 0.7)));
+
